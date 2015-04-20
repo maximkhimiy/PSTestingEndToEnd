@@ -12,7 +12,7 @@ namespace BankingSite.UnitTests
         [Test]
         public void ShouldDeclineUnderAgeApplicant()
         {
-            var fakeGateway = new Mock<ICreditCheckerGateway>();
+             var fakeGateway = new Mock<ICreditCheckerGateway>();
          
             var sut = new CreditCardApplicationScorer(fakeGateway.Object, null);
 
